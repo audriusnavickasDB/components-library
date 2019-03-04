@@ -1,0 +1,10 @@
+.button-group {
+    .button {
+        border-radius: 0;
+        border-right: 1px solid #fff;
+
+        &:last-child {
+            border-right: 0;
+        }
+    }
+}
