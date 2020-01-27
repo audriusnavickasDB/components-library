@@ -1,24 +1,24 @@
-const autoprefixer = require('autoprefixer');
+const autoprefixer = require("autoprefixer");
 
 const rules = [
     {
         exclude: /node_modules/,
         test: /\.(scss)$/,
         use: [
-            'style-loader',
-            'css-loader',
+            "style-loader",
+            "css-loader",
             {
-                loader: 'postcss-loader',
+                loader: "postcss-loader",
                 options: {
                     plugins: [
                         autoprefixer({
-                            grid: "autoplace",
-                        }),
-                    ],
-                },
+                            grid: "autoplace"
+                        })
+                    ]
+                }
             },
-            'sass-loader',
-        ],
+            "sass-loader"
+        ]
     },
     {
         test: /\.(js|jsx)$/,
@@ -26,7 +26,10 @@ const rules = [
         use: {
             loader: "babel-loader",
             options: {
-                presets: ['@babel/preset-env', '@babel/react']
+                presets: [
+                    "@babel/preset-env",
+                    "@babel/react"
+                ]
             }
         }
     }

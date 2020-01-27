@@ -1,9 +1,9 @@
-const rules = require('../configs/rules.config');
-const { aliases } = require('../configs/aliases.config');
+const rules = require("../configs/rules.config");
+const {aliases} = require("../configs/aliases.config");
 
-module.exports = (baseConfig, env, defaultConfig) => {
-    defaultConfig.module.rules = rules;
-    defaultConfig.resolve.alias = aliases;
+module.exports = baseConfig => {
+    baseConfig.config.module.rules = rules;
+    baseConfig.config.resolve.alias = aliases;
 
-    return defaultConfig;
+    return baseConfig.config;
 };
