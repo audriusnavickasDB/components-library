@@ -1,5 +1,4 @@
-const rules = require("../configs/rules.config");
-const {aliases} = require("../configs/aliases.config");
+const {rules, aliases} = require("../configs/shared.config");
 
 module.exports = baseConfig => {
     baseConfig.config.module.rules = rules;
