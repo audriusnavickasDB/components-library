@@ -6,3 +6,5 @@ node_modules
 
 # Builds
 dist
+
+package-lock.json
