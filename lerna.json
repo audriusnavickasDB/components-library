@@ -1,12 +1,18 @@
 {
-    "lerna": "3.13.0",
+    "lerna": "3.20.2",
     "npmClient": "npm",
     "version": "independent",
-    "packages": ["src/**/*"],
+    "packages": [
+        "src/**/*"
+    ],
     "registry": "https://registry.npmjs.org/",
     "command": {
         "publish": {
-            "ignoreChanges": ["*.md", "tests/*", "ignored-files"]
+            "ignoreChanges": [
+                "*.md",
+                "tests/*",
+                "ignored-files"
+            ]
         }
     }
 }
